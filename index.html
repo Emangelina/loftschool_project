@@ -34,12 +34,12 @@
       </section>
       <section class="offers">
         <div class="container">
-          <h2 class="title title--fire">Горящие туры</h2> <!--Здесь модификатор, т.к. будет использована иконка "огонь"-->
+          <h2 class="title title--fire">Горящие туры</h2>
           <ul class="offers__list">
             <li class="offers__item">
               <img src="" alt="thailand" class="offers__pic">
               <div class="offers__content">
-                <div class="offers__title">Таиланд</div>
+                <h3 class="offers__title">Таиланд</h3> <!--в воркшопе тут разметка с помощью <div>, но по смыслу это ведь заголовок карточки тура-->
                 <ul class="offers__features">
                   <li class="offers__feature">
                     <img src="" alt="calendar" class="offers__feature-icon">
@@ -51,13 +51,13 @@
                   </li>
                 </ul>
                 <p class="offers__text">Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение систем массового участия.</p>
-                <a href="#" class="button button--light">Смотреть</a> <!--Модификатор отличает эти кнопки внутри секции от других кнопок на сайте-->
+                <a href="#" class="button button--light">Смотреть</a>
               </div>
             </li>
             <li class="offers__item">
               <img src="" alt="bali" class="offers__pic">
               <div class="offers__content">
-                <div class="offers_title">Бали</div>
+                <h3 class="offers_title">Бали</h3>
                 <ul class="offers__features">
                   <li class="offers__feature">
                     <img src="" alt="calendar" class="offers__feature-icon">
@@ -75,7 +75,7 @@
             <li class="offers__item">
               <img src="" alt="indonesia" class="offers__pic">
               <div class="offers__content">
-                <div class="offers__title">Индонезия</div>
+                <h3 class="offers__title">Индонезия</h3>
                 <ul class="offers__features">
                   <li class="offers__feature">
                     <img src="" alt="calendar" class="offers__feature-icon">
@@ -98,28 +98,27 @@
           <h2 class="title">Новости и акции</h2>
           <ul class="news__list">
             <li class="news__item">
-              <a href="#" class="news__link">
-                <img src="" alt="newyear-sale" class="news__pic">
-                <div class="news__content"> <!--Здесь говорилось о введении списка, но элеменам нельзя присваивать класс типа news__content__list и я не понимаю, какой класс можно присвоить, большая вложенность получается-->
-                  <time datetime="2019-12">Декабрь 2019</time> <!-- В воркшопе говорилось про тег <date>, но я ничего не нашла о нем и сделала так -->
-                  <div class="news__title">Дешевые путевки на Новый год!</div>
-                  <p class="news__text">Проведи новый год в Таиланде</p>
-                </div>
-              </a>
+              <div class="news__content"> <!--тут запуталась, что во что вложить правильнее, сначала хотела вложить все в ссылку и сделать внутри отдельно картинку и блок с текстовым содержанием, затем сделала так-->
+                <a href="#" class="news__content-link">
+                  <img src="" alt="newyear-sale" class="news__content-pic">
+                  <div class="news__content-date">Декабрь 2019</div> <!-- В воркшопе говорилось про тег <date>, но я ничего не нашла, нашла о <time datetime="", но показалось, что не оч сюда подходит -->
+                  <h3 class="news__content-title">Дешевые путевки на Новый год!</h3> <!--также в воркшопе говорилось, что все три строки текста - это список, но мне кажется - семантически это не верно, т.к. это не однотипные элементы-->
+                  <p class="news__content-text">Проведи новый год в Таиланде</p>
+                </a>
+              </div>
             </li>
-            <li class="news__item">
-              <a href="#" class="news__link">
-                <img src="" alt="promo-for-surfers" class="news__pic">
-                <div class="news__content">
-                  <time datetime="2019-12">Декабрь 2019</time>
-                  <div class="news__title">Акция для серфингистов!</div>
-                  <p class="news__text">В сезон больших волн скидка на путевку в Таиланд на остров серфингистов. Удачного пути!</p>
-                </div>
-              </a>
+              <div class="news__content">
+                <a href="#" class="news__content-link">
+                  <img src="" alt="promo-for-surfers" class="news__content-pic">
+                  <div class="news__content-date">Декабрь 2019</div>
+                  <h3 class="news__content-title">Акция для серфингистов!</h3>
+                  <p class="news__content-text">В сезон больших волн скидка на путевку в Таиланд на остров серфингистов. Удачного пути!</p>
+                </a>
+              </div>
             </li>
           </ul>
           <div class="pagination">
-            <div class="pagination__text">Страница 1 из 7</div>
+            <div class="pagination__display">Страница 1 из 7</div>
             <ul class="pagiation__list">
               <li class="pagination__item pagination__item--active"><a href="#" class="pagination__link">1</a></li>
               <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
@@ -135,10 +134,12 @@
       <section class="about">
         <div class="container">
           <img src="" alt="picture1" class="about__pic">
-          <img src="" alt="picture2" class="about__pic">
-          <h2 class="title title--dark">О нас</h2>
-          <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-          <a href="#" class="button">Подробнее</a>
+          <div class="about__content"> <!--изначально сделала сестринскими элементами обе картинки и блок содержания, но потом подумала, что наверное стилизовать таким образом будет проще. Тем не менее, по смыслу: обе картинки - это фон, а текст на этом фоне самостоятельный блок-->
+            <img src="" alt="picture2" class="about__pic">
+            <h2 class="title title--dark">О нас</h2>
+            <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+            <a href="#" class="button">Подробнее</a>
+          </div>
         </div>
       </section>
     </main>
@@ -154,10 +155,10 @@
         </nav>
         <div class="socialmedia">
           <ul class="socialmedia__list">
-            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="telegram" class="socialmedia__pic"></a></li>
-            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="vkontakte" class="socialmedia__pic"></a></li>
-            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="facebook" class="socialmedia__pic"></a></li>
-            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="instagram" class="socialmedia__pic"></a></li>
+            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="telegram" class="socialmedia__icon"></a></li>
+            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="vkontakte" class="socialmedia__icon"></a></li>
+            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="facebook" class="socialmedia__icon"></a></li>
+            <li class="socialmedia__item"><a href="#" class="socialmedia__link"><img src="" alt="instagram" class="socialmedia__icon"></a></li>
           </ul>
         </div>
         <adress class="contacts">
