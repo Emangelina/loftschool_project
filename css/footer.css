@@ -38,33 +38,33 @@
 }
 
 .socialmedia__item-icon--telegram {
-  background-image: url(/images/telegram.png);
+  background-image: url(/loftschool_project/images/telegram.png);
 }
 
 .socialmedia__item-icon--telegram:hover {
-  background-image: url(/images/thover.png);
+  background-image: url(/loftschool_project/images/thover.png);
 }
 
 .socialmedia__item-icon--vk {
-  background-image: url(/images/vk.png);
+  background-image: url(/loftschool_project/images/vk.png);
 }
 
 .socialmedia__item-icon--vk:hover {
-  background-image: url(/images/vkhover.png);
+  background-image: url(/loftschool_project/images/vkhover.png);
 }
 
 .socialmedia__item-icon--facebook {
-  background-image: url(/images/f.png);
+  background-image: url(/loftschool_project/images/f.png);
 }
 
 .socialmedia__item-icon--facebook:hover {
-  background-image: url(/images/fhover.png);
+  background-image: url(/loftschool_project/images/fhover.png);
 }
 
 .socialmedia__item-icon--insta {
-  background-image: url(/images/in.png);
+  background-image: url(/loftschool_project/images/in.png);
 }
 
 .socialmedia__item-icon--insta:hover {
-  background-image: url(/images/inhover.png);
+  background-image: url(/loftschool_project/images/inhover.png);
 }
