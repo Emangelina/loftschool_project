@@ -1,0 +1,72 @@
+.offers {
+  margin-bottom: 119px;
+}
+
+.title--fire:after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 28px;
+  background: url(/images/flame.png) center center no-repeat;
+  margin-left: 12px;
+}
+
+.offers__item {
+  display: inline-block;
+  min-height: 449px;
+  width: 362px;
+  background: #fff;
+  margin-right: 22.8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.offers__item:last-child {
+margin-right: 0;
+}
+
+.offers__pic {
+  min-height: 144px;
+}
+
+.offers__content {
+  padding: 26px 22px;
+}
+
+.offers__title {
+  color: #000;
+  margin-bottom: 21px;
+}
+
+.offers__features {
+  margin-bottom: 23.5px;
+}
+
+.offers__feature {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.offers__feature:first-child {
+  margin-right: 23px;
+}
+
+.offers__feature-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+}
+
+.offers__feature-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.offers__text {
+  font-size: 14px;
+  color: #303030;
+  line-height: 1.5;
+  margin-bottom: 24.5px;
+}
