@@ -6,7 +6,7 @@
   content: "";
   width: 490px;
   height: 505px;
-  background: url("/images/gates.png") center center no-repeat;
+  background: url("/loftschool_project/images/gates.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@
 .about__content {
   width: 785px;
   padding: 66px 202px 66px 81px;
-  background: url("/images/mountains.png") center center no-repeat;
+  background: url("/loftschool_project/images/mountains.png") center center no-repeat;
   background-size: cover;
   margin-top: 97px;
   margin-left: -140px;
