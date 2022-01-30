@@ -14,7 +14,7 @@ box-sizing: border-box;
 }
 
 .main-page-wrapper {
-background: url(/images/background.jpg) center top -20px no-repeat, url(/images/background2.png) center bottom no-repeat; /*Тут пришлось воспоьзоваться отрицательным отступом, т.к. скачанная картинка была немного другого формата, это ок в данном случае?*/
+background: url(/loftschool_project/images/background.jpg) center top -20px no-repeat, url(/loftschool_project/images/background2.png) center bottom no-repeat; /*Тут пришлось воспоьзоваться отрицательным отступом, т.к. скачанная картинка была немного другого формата, это ок в данном случае?*/
 }
 
 p {
