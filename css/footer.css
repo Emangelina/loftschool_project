@@ -23,8 +23,12 @@
 .socialmedia__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 4px;
+  margin-right: 6px;
   background: center center no-repeat;
+}
+
+.socialmedia__item:last-child {
+  margin-right: 0;
 }
 
 .socialmedia__link {
@@ -33,38 +37,34 @@
   height: 36px;
 }
 
-.socialmedia__link:last-child {
-  margin-right: 0;
-}
-
 .socialmedia__item-icon--telegram {
-  background-image: url(/loftschool_project/images/telegram.png);
+  background-image: url(../images/telegram.png);
 }
 
 .socialmedia__item-icon--telegram:hover {
-  background-image: url(/loftschool_project/images/thover.png);
+  background-image: url(../images/thover.png);
 }
 
 .socialmedia__item-icon--vk {
-  background-image: url(/loftschool_project/images/vk.png);
+  background-image: url(../images/vk.png);
 }
 
 .socialmedia__item-icon--vk:hover {
-  background-image: url(/loftschool_project/images/vkhover.png);
+  background-image: url(../images/vkhover.png);
 }
 
 .socialmedia__item-icon--facebook {
-  background-image: url(/loftschool_project/images/f.png);
+  background-image: url(../images/f.png);
 }
 
 .socialmedia__item-icon--facebook:hover {
-  background-image: url(/loftschool_project/images/fhover.png);
+  background-image: url(../images/fhover.png);
 }
 
 .socialmedia__item-icon--insta {
-  background-image: url(/loftschool_project/images/in.png);
+  background-image: url(../images/in.png);
 }
 
 .socialmedia__item-icon--insta:hover {
-  background-image: url(/loftschool_project/images/inhover.png);
+  background-image: url(../images/inhover.png);
 }

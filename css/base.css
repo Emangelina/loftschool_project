@@ -14,7 +14,7 @@ box-sizing: border-box;
 }
 
 .main-page-wrapper {
-background: url(/loftschool_project/images/background.jpg) center top -20px no-repeat, url(/loftschool_project/images/background2.png) center bottom no-repeat; /*Тут пришлось воспоьзоваться отрицательным отступом, т.к. скачанная картинка была немного другого формата, это ок в данном случае?*/
+background: url(../images/background.jpg) center top -7px no-repeat, url(../images/background2.png) center bottom no-repeat; /*Тут пришлось воспоьзоваться отрицательным отступом, т.к. скачанная картинка была немного другого формата, это ок в данном случае?*/
 }
 
 p {
@@ -47,7 +47,6 @@ font-weight: 700;
 .container {
 margin: 0 auto;
 width: 1140px;
-position: relative;
 }
 
 ul {
@@ -68,7 +67,7 @@ li {
 
 .menu {
   position: absolute;
-  top: 31px;
+  top: 32px;
   left: 164px;
 }
 
@@ -96,7 +95,7 @@ li {
 
 .contacts {
   position: absolute;
-  top: 24px;
+  top: 22px;
   right: 0;
   text-align: right;
 }
