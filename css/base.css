@@ -1,4 +1,8 @@
-body    {
+body, html {
+  height: 100%;
+}
+
+body {
   font-family: 'open sans', helvetica, sans-serif;
   background: #031920;
   color: #fff;
@@ -13,8 +17,16 @@ body    {
 box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 1200px;
+}
+
 .main-page-wrapper {
-background: url(../images/background.jpg) center top -7px no-repeat, url(../images/background2.png) center bottom no-repeat; /*Тут пришлось воспоьзоваться отрицательным отступом, т.к. скачанная картинка была немного другого формата, это ок в данном случае?*/
+background: url(../images/background.jpg) center top -7px no-repeat, url(../images/background2.png) center bottom 169px no-repeat;
 }
 
 p {
@@ -25,17 +37,18 @@ margin-bottom: 0;
 a {
 color: inherit;
 text-decoration: none;
+display: inline-block;
 }
 
 h1, h2, h3, h4, h5, h6 {
 margin: 0;
 font-weight: 700;
+line-height: 1;
 }
 
 h2 {
 font-size: 36px;
 font-weight: 700;
-margin-bottom: 50px;
 margin-left: 3px;
 }
 
@@ -49,6 +62,13 @@ margin: 0 auto;
 width: 1140px;
 }
 
+.page-content {
+  background: #fff;
+  color: #303030;
+  padding-top: 98px;
+  padding-bottom: 84px;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -60,29 +80,27 @@ li {
 
 .logo {
   display: block;
-  position: absolute;
-  left: 0;
-  top: 20.64px;
+  width: 85px;
 }
 
 .menu {
-  position: absolute;
-  top: 32px;
-  left: 164px;
+  margin-left: 80px;
+  }
+
+.menu__list {
+  display: flex;
 }
 
 .menu__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 50px;
-}
-
-.menu__item--active .menu__link {
-  color: #da0100;
+  margin-right: 54px;
 }
 
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.menu__item--active .menu__link {
+  color: #da0100;
 }
 
 .menu__link {
@@ -94,10 +112,9 @@ li {
 }
 
 .contacts {
-  position: absolute;
-  top: 22px;
-  right: 0;
+  margin-left: auto;
   text-align: right;
+  margin-top: 5px;
 }
 
 .contacts__phone {
@@ -117,9 +134,10 @@ li {
 }
 
 .contacts__description {
+  line-height: 1;
   font-size: 11px;
   color: #9a9a9a;
-  margin-bottom: 6.5px;
+  margin-bottom: 5px;
 }
 
 .button {
@@ -149,25 +167,26 @@ li {
 }
 
 .pagination {
-  text-align: center;
-  margin-bottom: 145px;
-}
-
-.pagination__display, .pagination__list {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-}
-
-.pagination__item {
-  display:inline-block;
-  vertical-align: middle;
-  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination__display {
-  margin-right: 20px;
-  font-size: 16px;
+  margin-right: 32px;
+}
+
+.pagination--dark {
+  color: #000;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item {
+  margin-right: 1px;
 }
 
 .pagination__link {
@@ -178,6 +197,7 @@ li {
   font-weight: 700;
   line-height: 32px;
   font-size: 16px;
+  text-align: center;
 }
 
 .pagination__link:hover {
@@ -188,4 +208,14 @@ li {
 .pagination__item--active .pagination__link {
   background: #fff;
   color: #f5170e;
+}
+
+.pagination__item-dark--active .pagination__link{
+  background: #f5170e;
+  color: #fff;
+}
+
+.pagination__link--dark:hover {
+  background: #f5170e;
+  color: #fff;
 }

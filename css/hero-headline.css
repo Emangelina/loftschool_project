@@ -1,0 +1,80 @@
+.hero {
+  margin-bottom: 253px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 523px;
+}
+  
+.hero__text-section {
+  width: 45%;
+}
+
+.hero__title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.36;
+  margin-bottom: 28px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+.headline__container {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.headline {
+  min-height: 402px;
+  background: url(/images/headline.png) center top -9px no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.page-title {  /*Нужно ли заголовок заключать в блок или придавать ему блочное поведение, если и так отступ сработал?*/
+  font-size: 72px;
+  margin-bottom: 32px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items:center;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #9a9a9a;
+  text-decoration: underline;
+}
+
+.breadcrumbs__item:after {
+  content: "/";
+  display: inline-block;
+  color: #9a9a9a;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.breadcrumbs__item:last-child:after {
+  content: none;
+}
+
+.breadcrumbs__item--active {
+  font-weight: 700;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+

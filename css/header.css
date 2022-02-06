@@ -1,5 +1,16 @@
 .header {
-  height: 150px;
-  position: relative;
-  margin-bottom: 39px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right {
+  justify-content: flex-end;
 }
