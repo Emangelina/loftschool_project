@@ -35,7 +35,7 @@ justify-content: space-between;
 
 .headline {
   min-height: 402px;
-  background: url(/images/headline.png) center top -9px no-repeat;
+  background: url(images/headline.png) center top -9px no-repeat;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
