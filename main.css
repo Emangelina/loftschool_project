@@ -1,9 +1,16 @@
 @import url(css/base.css);
-@import url(css/header.css);
 @import url(css/hero-headline.css);
+@import url(css/header.css);
 @import url(css/offers.css);
 @import url(css/news.css);
 @import url(css/about.css);
 @import url(css/footer.css);
+@import url(css/button.css);
 @import url(css/services.css);
 @import url(css/inner-section.css);
+@import url(css/partners.css);
+@import url(css/menu.css);
+@import url(css/contacts.css);
+@import url(css/pagination.css);
+@import url(css/socialmedia.css);
+@import url(css/breadcrumbs.css);
