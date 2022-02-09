@@ -1,24 +1,26 @@
 .services__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-bottom: 57px;
 }
 
-.service { /*не смогла придумать, как пропорционально менять высоту всех блоков, если в одном из них меняется контент, или это не нужно?*/
+.service {
   display: flex;
   justify-content: space-between;
-  min-height: 333px;
+  min-height: 333px; /*вот это место, где я задала высоту как по макету - скриншот в телеге*/ 
+}
+
+.services__item {
   margin-bottom: 43px;
 }
 
-.service:last-child {
+.services__item:last-child {
   margin-bottom: 0;
 }
 
 .service__cover {
-  width: 40.5%;
-  min-height: 100%;
+  width: 40.4%;
+  max-height: 100%; /*В макете высота картинки равна высоте контента. Я хотела задать данное условие, чтобы при увеличении контента картинка могла растянуться. В родителе задала минимальную высоту, чтобы блок не сжимался при уменьшении текста. Но почему-то картинка вылезает за макет, она будто увеличена. Искала причину в контенте, но там вроде все точно построено, все паддинги выверила. И оттого, что картинка увеличена - от этого кнопка смещается слишком далеко вниз, прижимаясь к паддингу. При этом если я cover выставляю жесткую высоту 333, то все становится на места, значит, дело именно в блоке с картинкой или в высоте всего блока service. Но я не могу понять, в чем именно.*/
   border-radius: 5px;
   overflow: hidden;
 }
@@ -32,17 +34,16 @@
 .service__content { 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   max-width: 622px;
   flex: 1;
   padding-top: 19px;
-  padding-bottom: 24px;
+  padding-bottom: 18px;
 }
 
 .service__text {
   line-height: 1.7;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-bottom: 28px;
 }
 

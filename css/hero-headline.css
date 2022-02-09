@@ -41,40 +41,7 @@ justify-content: space-between;
   padding-bottom: 20px;
 }
 
-.page-title {  /*Нужно ли заголовок заключать в блок или придавать ему блочное поведение, если и так отступ сработал?*/
+.headline__title {  /*Сделала его элементом, теперь ок задавать оступ?*/
   font-size: 72px;
   margin-bottom: 32px;
 }
-
-.breadcrumbs__item {
-  display: flex;
-  align-items:center;
-}
-
-.breadcrumbs__link {
-  font-size: 14px;
-  color: #9a9a9a;
-  text-decoration: underline;
-}
-
-.breadcrumbs__item:after {
-  content: "/";
-  display: inline-block;
-  color: #9a9a9a;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
-.breadcrumbs__item:last-child:after {
-  content: none;
-}
-
-.breadcrumbs__item--active {
-  font-weight: 700;
-}
-
-.breadcrumbs__list {
-  display: flex;
-  align-items: center;
-}
-

@@ -1,35 +1,11 @@
 .inner-section {
   background: #f4f5f5;
   padding-top: 97px;
-  padding-bottom: 67px;
+  padding-bottom: 43px;
 }
 
 .inner-section__title {
   font-size: 48px;
   color: #1a1b1e;
   margin-left: 0;
-}
-
-.partners {
-  margin-top: 63px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.partners__item { /*Почему в воркшопе задавали размеры ссылке а не li? я сделала так, и тогда пропало пространство между активацией курсора на нажатие, потому что блоки ссылок были вплотную друг к другу, выглядело как одна общая ссылка, на мой взгляд, не особо удобно*/
-  display: flex;
-  margin-left: 27px;
-  width: 270px;
-  height: 131px;
-  justify-content: center;
-  align-items: center;
-}
-
-.partners__item:nth-child(4n + 1) {
-  margin-left: -22px;
-}
-
-.partners__pic {
-  max-width: 100%;
-  max-height: 100%;
 }

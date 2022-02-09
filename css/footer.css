@@ -10,6 +10,10 @@
   height: 82px;
   }
 
+.inner-footer {
+  height: 87px;
+}
+
 .footer-container__content {
   padding-top: 27px;
   padding-bottom: 23px;
@@ -26,58 +30,12 @@
   justify-content: flex-end;
 }
 
-.socialmedia {
-  margin-right: 73px;
+.footer__logo {
+  width: 85px;
+  margin-right: 79px;
 }
 
-.socialmedia__list {
-  display: flex;
-  align-items: center;
-}
-
-.socialmedia__item {
-  background: center center no-repeat;
-  margin-right: 10px;
-}
-
-.socialmedia__item:last-child {
-  margin-right: 0;
-}
-
-.socialmedia__link {
-  display: block;
-  width: 36px;
-  height: 36px;
-}
-
-.socialmedia__item-icon--telegram {
-  background-image: url(../images/telegram.png);
-}
-
-.socialmedia__item-icon--telegram:hover {
-  background-image: url(../images/thover.png);
-}
-
-.socialmedia__item-icon--vk {
-  background-image: url(../images/vk.png);
-}
-
-.socialmedia__item-icon--vk:hover {
-  background-image: url(../images/vkhover.png);
-}
-
-.socialmedia__item-icon--facebook {
-  background-image: url(../images/f.png);
-}
-
-.socialmedia__item-icon--facebook:hover {
-  background-image: url(../images/fhover.png);
-}
-
-.socialmedia__item-icon--insta {
-  background-image: url(../images/in.png);
-}
-
-.socialmedia__item-icon--insta:hover {
-  background-image: url(../images/inhover.png);
+.inner-footer__logo {
+  width: 98px;
+  margin-right: 66px;
 }

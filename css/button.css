@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  background: #f5170e;
+  border-radius: 35px;
+  padding: 18px 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.button:hover {
+  background: #da0100
+}
+
+.button--light {
+  background: #fff;
+  border: 1px solid #f5170e;
+  color: #f5170e;
+  padding: 17px 30px;
+}
+
+.button--light:hover {
+  background: f5170e;
+  color: #fff;
+}

@@ -14,3 +14,13 @@
 .header__col--align--right {
   justify-content: flex-end;
 }
+
+.header__logo {
+  width: 85px;
+  margin-right: 79px;
+}
+
+.inner-header__logo {
+  width: 98px;
+  margin-right: 66px;
+}

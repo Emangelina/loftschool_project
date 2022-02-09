@@ -57,6 +57,10 @@ font-size: 24px;
 font-weight: 700;
 }
 
+img {
+  width:100%;
+}
+
 .container {
 margin: 0 auto;
 width: 1140px;
@@ -66,7 +70,7 @@ width: 1140px;
   background: #fff;
   color: #303030;
   padding-top: 98px;
-  padding-bottom: 84px;
+  padding-bottom: 86px;
 }
 
 ul {
@@ -80,142 +84,4 @@ li {
 
 .logo {
   display: block;
-  width: 85px;
-}
-
-.menu {
-  margin-left: 80px;
-  }
-
-.menu__list {
-  display: flex;
-}
-
-.menu__item {
-  margin-right: 54px;
-}
-
-.menu__item:last-child {
-  margin-right: 0;
-}
-
-.menu__item--active .menu__link {
-  color: #da0100;
-}
-
-.menu__link {
-  font-size: 14px;
-}
-
-.menu__link:hover {
-  color: #DA0100;
-}
-
-.contacts {
-  margin-left: auto;
-  text-align: right;
-  margin-top: 5px;
-}
-
-.contacts__phone {
-  font-size: 26px;
-  line-height: 1;
-}
-
-.contacts__dropdown-title {
-  font-size: 13px;
-  color: #98A4A8;
-  text-decoration: underline;
-  line-height: 1;
-}
-
-.contacts__dropdown-title:hover {
-  color: #fff;
-}
-
-.contacts__description {
-  line-height: 1;
-  font-size: 11px;
-  color: #9a9a9a;
-  margin-bottom: 5px;
-}
-
-.button {
-  display: inline-block;
-  background: #f5170e;
-  border-radius: 35px;
-  padding: 18px 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.button:hover {
-  background: #da0100
-}
-
-.button--light {
-  background: #fff;
-  border: 1px solid #f5170e;
-  color: #f5170e;
-  padding: 17px 30px;
-}
-
-.button--light:hover {
-  background: f5170e;
-  color: #fff;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pagination__display {
-  margin-right: 32px;
-}
-
-.pagination--dark {
-  color: #000;
-}
-
-.pagination__list {
-  display: flex;
-  align-items: center;
-}
-
-.pagination__item {
-  margin-right: 1px;
-}
-
-.pagination__link {
-  display: block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  font-weight: 700;
-  line-height: 32px;
-  font-size: 16px;
-  text-align: center;
-}
-
-.pagination__link:hover {
-  background: #fff;
-  color: #f5170e;
-}
-
-.pagination__item--active .pagination__link {
-  background: #fff;
-  color: #f5170e;
-}
-
-.pagination__item-dark--active .pagination__link{
-  background: #f5170e;
-  color: #fff;
-}
-
-.pagination__link--dark:hover {
-  background: #f5170e;
-  color: #fff;
 }

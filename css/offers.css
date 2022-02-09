@@ -14,7 +14,7 @@
 .offers__list { 
   display: flex;
   justify-content: space-between;
-  margin-top: 57px;
+  margin-top: 57px; /*Ок ли задавать оступ элементу, который фактически является блоком?*/
 }
 
 .offers__item {
@@ -53,33 +53,30 @@
 
 .offers__features {
   display: flex;
-  width: 271px;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 7px;
-  margin-bottom: 23.5px;
+  margin-bottom: 23.5px;  /*Ок ли задавать оступ элементу, который фактически является блоком?*/
+}
+
+.offers__feature {
+  display: flex;
+  align-items: center;
+}
+
+.offers__feature:nth-child(1) {
+  margin-left: 5px;
+}
+
+.offers__feature:nth-child(2) {
+  margin-left: 28px;
 }
 
 .offers__feature-icon {
-  display: block;
+  height: 26px;
+  margin-right: 10px;
 }
 
 .offers__feature-text {
   color: #666;
-}
-
-.offers__feature-calendar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 126px;
-}
-
-.offers__feature-food {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 117px;
 }
 
 .offers__text {
