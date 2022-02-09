@@ -14,7 +14,7 @@
 .offers__list { 
   display: flex;
   justify-content: space-between;
-  margin-top: 57px; /*Ок ли задавать оступ элементу, который фактически является блоком?*/
+  margin-top: 57px;
 }
 
 .offers__item {
@@ -54,7 +54,7 @@
 .offers__features {
   display: flex;
   align-items: center;
-  margin-bottom: 23.5px;  /*Ок ли задавать оступ элементу, который фактически является блоком?*/
+  margin-bottom: 23.5px;
 }
 
 .offers__feature {
