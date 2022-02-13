@@ -1,0 +1,28 @@
+.single-feedback__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tag {
+  align-self: flex-start;
+  font-size: 13px;
+  color: #303030;
+  padding: 9.5px 17.5px;
+  border-radius: 35px;
+  background: #E7E7E7;
+}
+
+.tag--bg--green {
+  color: #1A1B1E;
+  background: #B9EAE4;
+}
+
+.single-feedback__tag {
+  margin-right: 17px;
+}
+
+.single-feedback__tag:last-child {
+  margin-right: 0;
+}

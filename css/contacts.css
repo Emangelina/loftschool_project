@@ -1,6 +1,9 @@
 .contacts {
   margin-left: auto;
   text-align: right;
+}
+
+.header-contacts {
   margin-top: 5px;
 }
 
@@ -9,20 +12,9 @@
   line-height: 1;
 }
 
-.contacts__dropdown-title {
-  font-size: 13px;
-  color: #98A4A8;
-  text-decoration: underline;
-  line-height: 1;
-}
-
-.contacts__dropdown-title:hover {
-  color: #fff;
-}
-
 .contacts__description {
-  line-height: 1;
+  line-height: 2;
   font-size: 11px;
   color: #9a9a9a;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }

@@ -1,25 +1,44 @@
 .button {
   display: inline-block;
-  background: #f5170e;
+  color: #fff;
+  background-color: #f5170e;
   border-radius: 35px;
   padding: 18px 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
+  transition: background-color .3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background: #da0100
+  background-color: #da0100;
 }
 
 .button--light {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #f5170e;
   color: #f5170e;
   padding: 17px 30px;
 }
 
 .button--light:hover {
-  background: f5170e;
+  background-color: f5170e;
   color: #fff;
+}
+
+.form__button {
+  padding: 19px 40.5px;
+  margin-right: 17px;
+}
+
+.form__button:last-child {
+  margin-right: 0;
+}
+
+.form__button--reset {
+  background: #8e8e8e;
+}
+
+.form__button--reset:hover {
+  background: #2b2b2b;
 }

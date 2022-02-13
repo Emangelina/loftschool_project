@@ -30,24 +30,25 @@
   line-height: 32px;
   font-size: 16px;
   text-align: center;
+  transition: background-color .3s ease, color 0.3s ease;
 }
 
 .pagination__link:hover {
-  background: #fff;
+  background-color: #fff;
   color: #f5170e;
 }
 
 .pagination__item--active .pagination__link {
-  background: #fff;
+  background-color: #fff;
   color: #f5170e;
 }
 
 .pagination__item-dark--active .pagination__link{
-  background: #f5170e;
+  background-color: #f5170e;
   color: #fff;
 }
 
 .pagination__link--dark:hover {
-  background: #f5170e;
+  background-color: #f5170e;
   color: #fff;
 }

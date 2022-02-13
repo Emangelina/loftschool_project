@@ -14,6 +14,7 @@
   filter: grayscale(100%);
   margin-right: 74px;
   margin-bottom: 65px;
+  transition: filter .3s ease;
 }
 
 .partners__item:nth-child(4n + 4) {

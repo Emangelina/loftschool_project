@@ -1,0 +1,91 @@
+.feedback__list {
+  column-count: 2;
+  column-gap: 26px;
+  margin-bottom: 75px;
+}
+
+.feedback__item {
+  max-width: 557px;
+  margin-bottom: 16px;
+}
+
+.single-feedback {
+  display: inline-flex;
+  flex-direction: column;
+  background: #F4F5F5;
+  border-radius: 5px;
+  padding: 52px 30px 32px;
+}
+
+.single-feedback__head {
+  display: flex;
+  align-items: center;
+}
+
+.single-feedback__userdata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 21px;
+}
+
+.single-feedback__name {  /*Вот тут я так поняла из макета, нужно, чтобы при наведении ссылка становилась с подчеркиванием?*/
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1A1B1E;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: .3s; /*Не смогла сделать чтобы и подчеркивание становилось плавным, пробовала сделать с помощью прозрачного псевдоэлемента before, 
+  а затем поменять им прозрачность по ховеру, но по какой то причине before в коде был на месте, но не отображался вообще ни в каких состояниях. 
+  Я так поняла, что подчеркивание не имеет числового значения и поэтому транзишн не работает. 
+  Можно ли заставить подчеркивание появляться вместе со сменой цвета? Или это следующий уровень мастерства?*/
+}
+
+.single-feedback__name:after {
+  content: "";
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/vk-blue.png) center center no-repeat;
+}
+
+.single-feedback__name:hover { 
+  color: #2E77A4;
+  text-decoration: underline;
+}
+
+.single-feedback__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 27px;
+  min-height: 180px;
+  flex: 1;
+}
+
+.single-feedback__title {
+  display: block;
+  font-size: 30px;
+  margin-left: 3px;
+  line-height: 1.4;
+}
+
+.single-feedback__text {
+  padding-top: 13px;
+  color: #818181;
+  line-height: 1.68;
+}
+
+.single-feedback__date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1B1E;
+  display: flex;
+  margin-top: auto;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-height: 51px;
+}
+

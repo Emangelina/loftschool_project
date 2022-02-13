@@ -1,0 +1,33 @@
+@keyframes bounce-in {
+  
+  0% {
+      opacity: 0;
+      transform: scale(60%);
+    }
+
+  30% {
+    opacity: 100%;
+    transform: scale(112%);
+  }
+
+  49% {
+    opacity: 100%;
+    transform: scale(92%);
+  }
+
+  68% {
+    opacity: 100%;
+    transform: scale(112%);
+  }
+
+  86% {
+    opacity: 100%;
+    transform: scale(92%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: scale(100%);
+  }
+
+} 
