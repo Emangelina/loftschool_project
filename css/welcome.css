@@ -1,4 +1,4 @@
-@import url(../css/animation.css); /*Верно ли я подключила анимацию?*/
+@import url(animation.css); /*Верно ли я подключила анимацию? В том ли файле и том ли месте?*/
 
 .welcome {
   display: flex;
