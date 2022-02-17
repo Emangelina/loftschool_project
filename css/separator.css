@@ -1,11 +1,12 @@
 .separator {
+  display: flex;
   width: 100%;
-  height: 363px;
+  min-height: 363px;
   background: url(../images/Rectangle.png) center center no-repeat;
 }
 
 .separator__container {
-  height: 100%;
+  height: auto;
 }
 
 .separator__content {
@@ -20,6 +21,7 @@
   align-items: center;
   max-width: 595px;
   height: 100%;
+  flex: 1;
 }
 
 .separator__title-text {

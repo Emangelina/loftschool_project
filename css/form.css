@@ -1,24 +1,30 @@
 .form {
-  padding-top: 64px;
+  padding-top: 70px;
 }
+
+.form__title {
+  margin-bottom: 65px;
+} 
 
 .form__row {
   display: flex;
-  margin-bottom: 26px;
+  align-items: flex-start;
+  margin-bottom: 25px;
 }
 
-input {
-  border: none;
+.form__row:last-child {
+  margin-bottom: 0;
 }
 
 .form__input {
-  border: none;
   background: #fff;
   border-radius: 5px;
   font-size: 18px;
-  padding: 22px 30px;
+  line-height: 1.46;
+  padding: 18px 30px;
   color: #1A1B1E;
   flex: 1;
+  border: 1px solid transparent;
 }
 
 .form__input::placeholder {
@@ -40,8 +46,7 @@ input {
 .form__input--textarea {
   resize: none;
   padding: 30px;
-  width: 100%;
-  min-height: 235px;
+  height: 235px;
 }
 
 .form__feedback {
@@ -50,8 +55,7 @@ input {
 
 .form__controls {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .controls {
@@ -60,6 +64,7 @@ input {
   align-items: flex-start;
   flex: 1;
   flex-wrap: wrap;
+  gap: 7px;
 }
 
 .form__controls-title {
@@ -70,9 +75,13 @@ input {
   padding-top: 14px;
 }
 
-input:checked ~ .controls__tag {
+.controls__checkbox:checked ~ .controls__tag {
   color: #1A1B1E;
   background-color: #B9EAE4;
+}
+
+.controls__checkbox:focus ~ .controls__tag {
+  border: 1px solid #bebebe;
 }
 
 .controls__element {
@@ -80,12 +89,8 @@ input:checked ~ .controls__tag {
 }
 
 .controls__checkbox {
-  display: none;
-}
-
-.controls__item {
-  margin-right: 8px;
-  margin-bottom: 9px;
+  appearance: none;
+  position: absolute;
 }
 
 .controls__item:nth-child(5n+5) {
@@ -95,5 +100,6 @@ input:checked ~ .controls__tag {
 .form__buttons {
   display: flex;
   justify-content: flex-end;
+  column-gap: 17px;
 }
 

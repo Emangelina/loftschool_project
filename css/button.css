@@ -14,31 +14,30 @@
   background-color: #da0100;
 }
 
-.button--light {
+.button--theme-light {
   background-color: #fff;
   border: 1px solid #f5170e;
   color: #f5170e;
   padding: 17px 30px;
 }
 
-.button--light:hover {
-  background-color: f5170e;
+.button--theme-light:hover {
+  background-color: #f5170e;
   color: #fff;
 }
 
 .form__button {
   padding: 19px 40.5px;
-  margin-right: 17px;
 }
 
 .form__button:last-child {
   margin-right: 0;
 }
 
-.form__button--reset {
+.button--theme-dark {
   background: #8e8e8e;
 }
 
-.form__button--reset:hover {
+.button--theme-dark:hover {
   background: #2b2b2b;
 }
