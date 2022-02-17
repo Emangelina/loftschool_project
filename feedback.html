@@ -15,10 +15,10 @@
       <div class="container headline__container">
         <header class="header inner-header">
           <div class="header__col">
-            <a href="index.html" class="logo inner-header__logo"><img src="images/logo.png" alt="AirAsia logo" class="logo__pic"></a>
+            <a href="home.html" class="logo inner-header__logo"><img src="images/logo.png" alt="AirAsia logo" class="logo__pic"></a>
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="home.html" class="menu__link">Главная</a></li>
                 <li class="menu__item"><a href="service.html" class="menu__link">Услуги</a></li>
                 <li class="menu__item menu__item--active"><a href="feedback.html" class="menu__link">Отзывы</a></li>
               </ul>
@@ -26,13 +26,14 @@
           </div>
           <div class="header__col header__col--aligh--right">
             <adress class="contacts header-contacts">
-              <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a><div class="dropdown contacts__dropdown">
-                <div class="dropdown__title">График работы</div>
-                <div class="dropdown__block">
-                  <div class="dropdown__content">
-                    <div class="dropdown__schedule">пн-вс: 09:00 - 20:00</div>
-                    <div class="dropdown__break">Обед: 14:00-14:30</div>
-                  </div>
+              <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+              <div class="contacts__schedule">
+                <div class="dropdown-title">График работы</div>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item dropdown__item--schedule">пн-вс: 09:00 - 20:00</li>
+                    <li class="dropdown__item dropdown__item--break">Обед: 14:00-14:30</li>
+                  </ul>
                 </div>
               </div>
             </adress>
@@ -41,7 +42,7 @@
         <h1 class="headline__title">Отзывы</h1>
         <nav class="breadcrumbs">
           <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="home.html" class="breadcrumbs__link">Главная</a></li>
             <li class="breadcrumbs__item breadcrumbs__item--active"><a href="feedback.html" class="breadcrumbs__link">Отзывы</a></li>
           </ul>
         </nav>
@@ -57,7 +58,7 @@
                 <div class="single-feedback__userdata">
                   <a href="#" class="single-feedback__name">Иван Петрович</a>
                   <ul class="single-feedback__tags">
-                    <li class="single-feedback__tag tag tag--bg--green">Водопад Янг-бей</li>
+                    <li class="single-feedback__tag tag tag--bg-green">Водопад Янг-бей</li>
                   </ul>
                 </div>
               </div>
@@ -75,7 +76,7 @@
                 <div class="single-feedback__userdata">
                   <a href="#" class="single-feedback__name">Лиза Сидорова</a>
                   <ul class="single-feedback__tags">
-                    <li class="single-feedback__tag tag tag--bg--green">Тур по Таиланду</li>
+                    <li class="single-feedback__tag tag tag--bg-green">Тур по Таиланду</li>
                   </ul>
                 </div>
               </div>
@@ -93,7 +94,7 @@
                 <div class="single-feedback__userdata">
                   <a href="#" class="single-feedback__name">Екатерина Жмых</a>
                   <ul class="single-feedback__tags">
-                    <li class="single-feedback__tag tag tag--bg--green">Тур на Остров обезьян</li>
+                    <li class="single-feedback__tag tag tag--bg-green">Тур на Остров обезьян</li>
                   </ul>
                 </div>
               </div>
@@ -111,7 +112,7 @@
                 <div class="single-feedback__userdata">
                   <a href="#" class="single-feedback__name">Антон Игоревич</a>
                   <ul class="single-feedback__tags">
-                    <li class="single-feedback__tag tag tag--bg--green">Тур по Индонезии</li>
+                    <li class="single-feedback__tag tag tag--bg-green">Тур по Индонезии</li>
                   </ul>
                 </div>
               </div>
@@ -145,86 +146,85 @@
       <div class="container separator__container">
         <div class="separator__content">
           <div class="separator__title">
-            <h2 class="separator__title-text">Подберем тур<br>по вашим пожеланиям</h2> <!--Обошлась с помощью бр, т.к без изощрений не понятно, как соблюсти два слова в верхней строке и остальное в нижней-->
+            <h2 class="separator__title-text">Подберем тур по&nbspвашим пожеланиям</h2>
           </div>
           <div class="separator__image"><img src="images/couple.png" alt="separator picture" class="separator__pic"></div>
         </div>
       </div>
     </section>
     <section class="inner-section inner-section-feedback">
-      <div class="container"><section class="give-feedback">
-          <h2 class="inner-section__title">Оставьте отзыв</h2>
-          <form action="" method="" class="form">
-            <div class="form__row">
-              <input type="text" class="form__input form__input--text" placeholder="Введите имя">
-              <input type="text" class="form__input form__input--text" placeholder="Ссылка на профиль VK">
-            </div>
-            <div class="form__row">
-              <textarea name="feedback" id="" class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
-            </div>
-            <div class="form__controls">
-              <h4 class="form__controls-title">Какими услугами компании пользуетесь?</h4>
-              <ul class="controls controls-list">
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="monkey-iceland">
-                    <div class="tag controls__tag">Остров обезьян</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="thailand-tour">
-                    <div class="tag controls__tag">Тур по Таиланду</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="yang-bay-waterfall">
-                    <div class="tag controls__tag">Водопад Янг-бей</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="indonesia-tour">
-                    <div class="tag controls__tag">Тур по Индонезии</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="none">
-                    <div class="tag controls__tag">Никакими</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="bali-tour">
-                    <div class="tag controls__tag">Тур по Бали</div>
-                  </label>
-                </li>
-                <li class="controls__item">
-                  <label class="controls__element">
-                    <input class="controls__checkbox" type="checkbox" name="controls-service" value="other">
-                    <div class="tag controls__tag">Другое</div>
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="form__buttons">
-              <button type="reset" class="button form__button form__button--reset">Очистить</button>
-              <button type="submit" class="button form__button">Отправить</button>
-            </div>
-          </form>
-      </section>
+      <div class="container">
+        <form action="" method="" class="form">
+          <h2 class="inner-section__title form__title">Оставьте отзыв</h2>
+          <div class="form__row">
+            <input type="text" name="name" class="form__input form__input--text" placeholder="Введите имя">
+            <input type="text" name="profile-link" class="form__input form__input--text" placeholder="Ссылка на профиль VK">
+          </div>
+          <div class="form__row">
+            <textarea name="comment" class="form__input form__input--textarea" placeholder="Напишите свой честный отзыв ;)"></textarea>
+          </div>
+          <div class="form__row form__controls">
+            <h4 class="form__controls-title">Какими услугами компании пользуетесь?</h4>
+            <ul class="controls form__controls-list">
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="monkey-iceland">
+                  <div class="tag controls__tag">Остров обезьян</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="thailand-tour">
+                  <div class="tag controls__tag">Тур по Таиланду</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="yang-bay-waterfall">
+                  <div class="tag controls__tag">Водопад Янг-бей</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="indonesia-tour">
+                  <div class="tag controls__tag">Тур по Индонезии</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="none">
+                  <div class="tag controls__tag">Никакими</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="bali-tour">
+                  <div class="tag controls__tag">Тур по Бали</div>
+                </label>
+              </li>
+              <li class="controls__item">
+                <label class="controls__element">
+                  <input class="controls__checkbox" type="checkbox" name="controls-service" value="other">
+                  <div class="tag controls__tag">Другое</div>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__row form__buttons">
+            <button type="reset" class="button form__button button--theme-dark">Очистить</button>
+            <button type="submit" class="button form__button">Отправить</button>
+          </div>
+        </form>
       </div>
     </section>
     <footer class="footer__container">
       <div class="container footer-container__content">
         <div class="footer inner-footer">
           <div class="footer__col">
-            <a href="index.html" class="logo inner-footer__logo"><img src="images/logo.png" alt="AirAsia logo" class="logo__pic"></a>
+            <a href="home.html" class="logo inner-footer__logo"><img src="images/logo.png" alt="AirAsia logo" class="logo__pic"></a>
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="home.html" class="menu__link">Главная</a></li>
                 <li class="menu__item"><a href="service.html" class="menu__link">Услуги</a></li>
                 <li class="menu__item menu__item--active"><a href="feedback.html" class="menu__link">Отзывы</a></li>
               </ul>
