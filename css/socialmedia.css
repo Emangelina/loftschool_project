@@ -4,15 +4,9 @@
 
 .socialmedia__list {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-}
-
-.socialmedia__item {
-  margin-right: 10px;
-}
-
-.socialmedia__item:last-child {
-  margin-right: 0;
+  column-gap: 10px;
 }
 
 .socialmedia__link {

@@ -15,10 +15,7 @@
 .pagination__list {
   display: flex;
   align-items: center;
-}
-
-.pagination__item {
-  margin-right: 1px;
+  column-gap: 1px;
 }
 
 .pagination__link {
@@ -30,7 +27,7 @@
   line-height: 32px;
   font-size: 16px;
   text-align: center;
-  transition: background-color .3s ease, color 0.3s ease;
+  transition: background-color .3s, color 0.3s;
 }
 
 .pagination__link:hover {

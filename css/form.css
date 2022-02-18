@@ -103,3 +103,10 @@
   column-gap: 17px;
 }
 
+.form__button {
+  padding: 19px 40.5px;
+}
+
+.form__button:last-child {
+  margin-right: 0;
+}

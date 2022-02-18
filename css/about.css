@@ -1,4 +1,4 @@
-.about {
+.main-content__about {
   margin-bottom: 55px;
 }
 
@@ -40,15 +40,15 @@
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 20px;
   color: #060606;
   margin-bottom: 41px;
 }
 
 .about__text p {
   line-height: 1.68;
-  margin-bottom: 20px;
-}
-
-.about__text p:last-child {
-  margin-bottom: 0;
 }
